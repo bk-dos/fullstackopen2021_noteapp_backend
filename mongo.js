@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose")
 
 if (process.argv.length < 3) {
   console.log("Please provide the password as an argument: node mongo.js <password>")
@@ -7,7 +7,7 @@ if (process.argv.length < 3) {
 
 const password = process.argv[2]
 
-const url = 
+const url =
   `mongodb+srv://bk314:${password}@cluster0.jqcts.mongodb.net/note-app?retryWrites=true&w=majority`
 
 mongoose.connect(url)
